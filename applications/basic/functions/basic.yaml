@@ -1,0 +1,15 @@
+id: QmQPDT9txkPJsJQ1XK3xtwwKdrkmegYS2WGUnWUTyYiJkK
+description: Use bild to process image
+tags: []
+source: .
+trigger:
+    type: https
+    method: GET
+    paths:
+        - /basic
+domains:
+    - generated_domain
+execution:
+    timeout: 10s
+    memory: 10MB
+    call: process
